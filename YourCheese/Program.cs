@@ -11,10 +11,27 @@ namespace YourCheese
 {
     class Program
     {
-        static int tableWidth = 75;
+        static int tableWidth = 100;
 
        
-        static List<PlayerData> playerDatas = new List<PlayerData>(); 
+        static List<PlayerData> playerDatas = new List<PlayerData>();
+
+        static String[] Colors = new String[]
+        {
+            "Red",
+            "Blue",
+            "Green",
+            "Pink",
+            "Orange",
+            "Yellow",
+            "Black",
+            "White",
+            "Purple",
+            "Brown",
+            "Cyan",
+            "Lime"
+        };
+
         static void UpdateCheat()
         {
        
@@ -22,7 +39,7 @@ namespace YourCheese
             { 
                 Console.Clear();
                 Console.WriteLine("Test Read Player Datas..");
-                PrintRow("offset", "Name", "OwnerId", "PlayerId", "spawnid", "spawnflag");
+                PrintRow("Name", "Color", "OwnerId", "PlayerId", "isImposter", "isAlive", "isConnected");
                 PrintLine();
 
                 foreach (var data in playerDatas)
@@ -34,12 +51,12 @@ namespace YourCheese
                         //set your player name text renderer color
                         data.WriteMemory_SetNameTextColor(new Color(0,1,0,1)); 
                     }
-                    if (data.PlayerInfo.Value.IsDead == 1)
+                    if (data.PlayerInfo.Value.IsDead == 1 || data.PlayerInfo.Value.Disconnected == 1)
                         Console.ForegroundColor = ConsoleColor.Red;
 
                     var Name = HamsterCheese.AmongUsMemory.Utils.ReadString(data.PlayerInfo.Value.PlayerName);
-                   PrintRow($"{(data.IsLocalPlayer == true ? "Me->" : "")}{data.PlayerControllPTROffset}", $"{Name}", $"{data.Instance.OwnerId}", $"{data.Instance.PlayerId}", $"{data.Instance.SpawnId}", $"{data.Instance.SpawnFlags}");
-                   Console.ForegroundColor = ConsoleColor.White; 
+                   PrintRow($"{Name}", $"{Colors[data.PlayerInfo.Value.ColorId]}", $"{data.Instance.OwnerId}", $"{data.Instance.PlayerId}", data.PlayerInfo.Value.IsImpostor == 1 ? $"true" : $"false", data.PlayerInfo.Value.IsDead == 1 ? $"false" : $"true", data.PlayerInfo.Value.Disconnected == 1 ? $"false" : $"true");
+                    Console.ForegroundColor = ConsoleColor.White; 
             
                    PrintLine();
                 }  

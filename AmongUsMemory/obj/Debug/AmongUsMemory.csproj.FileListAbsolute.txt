@@ -25,3 +25,9 @@ C:\Users\shlif\OneDrive\Desktop\Github\AmongUsMemory\AmongUsMemory\obj\Debug\Amo
 C:\Users\shlif\OneDrive\Desktop\Github\AmongUsMemory\AmongUsMemory\obj\Debug\AmongUsMemory.dll
 C:\Users\shlif\OneDrive\Desktop\Github\AmongUsMemory\AmongUsMemory\obj\Debug\AmongUsMemory.pdb
 C:\Users\shlif\OneDrive\Desktop\Github\AmongUsMemory\AmongUsMemory\obj\Debug\AmongUsMemory.csprojAssemblyReference.cache
+C:\Users\Kyle\Downloads\AmongUsMemory-master\AmongUsMemory-master\AmongUsMemory\bin\Debug\AmongUsMemory.dll
+C:\Users\Kyle\Downloads\AmongUsMemory-master\AmongUsMemory-master\AmongUsMemory\bin\Debug\AmongUsMemory.pdb
+C:\Users\Kyle\Downloads\AmongUsMemory-master\AmongUsMemory-master\AmongUsMemory\obj\Debug\AmongUsMemory.csprojAssemblyReference.cache
+C:\Users\Kyle\Downloads\AmongUsMemory-master\AmongUsMemory-master\AmongUsMemory\obj\Debug\AmongUsMemory.csproj.CopyComplete
+C:\Users\Kyle\Downloads\AmongUsMemory-master\AmongUsMemory-master\AmongUsMemory\obj\Debug\AmongUsMemory.dll
+C:\Users\Kyle\Downloads\AmongUsMemory-master\AmongUsMemory-master\AmongUsMemory\obj\Debug\AmongUsMemory.pdb

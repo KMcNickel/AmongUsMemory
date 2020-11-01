@@ -38,9 +38,13 @@ namespace YourCheese
             while (true)
             { 
                 Console.Clear();
-                Console.WriteLine("Test Read Player Datas..");
+                Console.WriteLine("Player Data");
                 PrintRow("Name", "Color", "OwnerId", "PlayerId", "isImposter", "isAlive", "isConnected");
                 PrintLine();
+
+                PlayerComparer comparer = new PlayerComparer();
+
+                playerDatas.Sort(comparer);
 
                 foreach (var data in playerDatas)
                 {

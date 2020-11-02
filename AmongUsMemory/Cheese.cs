@@ -82,7 +82,7 @@ namespace HamsterCheese.AmongUsMemory
             ShipStatus shipStatus = new ShipStatus();
             byte[] shipAob = Cheese.mem.ReadBytes(Pattern.ShipStatus_Pointer, Utils.SizeOf<ShipStatus>());
             var aobStr = MakeAobString(shipAob, 4, "00 00 00 00 ?? ?? ?? ??");
-            var aobResults = Cheese.mem.AoBScan(0x04000000, 0x08000000, aobStr, true, true); 
+            var aobResults = Cheese.mem.AoBScan(/*0x04000000, 0x08000000,*/ aobStr, true, true); 
             aobResults.Wait();  
             foreach (var result in aobResults.Result)
             {
@@ -141,7 +141,7 @@ namespace HamsterCheese.AmongUsMemory
             // aob pattern
             string aobData = MakeAobString(playerAoB, 4, "?? ?? ?? ??"); 
             // get result 
-            var result = Cheese.mem.AoBScan(0x04000000, 0x08000000, aobData, true, true);
+            var result = Cheese.mem.AoBScan(/*0x04000000, 0x08000000,*/ aobData, true, true);
             result.Wait();
 
 

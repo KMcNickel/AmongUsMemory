@@ -57,3 +57,13 @@ C:\Users\Kyle\Documents\GitHub\AmongUsMemory\YourCheese\obj\Debug\YourCheese.csp
 C:\Users\Kyle\Documents\GitHub\AmongUsMemory\YourCheese\obj\Debug\YourCheese.csproj.CopyComplete
 C:\Users\Kyle\Documents\GitHub\AmongUsMemory\YourCheese\obj\Debug\YourCheese.exe
 C:\Users\Kyle\Documents\GitHub\AmongUsMemory\YourCheese\obj\Debug\YourCheese.pdb
+C:\Users\Kylem\Documents\GitHub\AmongUsMemory\YourCheese\bin\Debug\YourCheese.exe.config
+C:\Users\Kylem\Documents\GitHub\AmongUsMemory\YourCheese\bin\Debug\YourCheese.exe
+C:\Users\Kylem\Documents\GitHub\AmongUsMemory\YourCheese\bin\Debug\YourCheese.pdb
+C:\Users\Kylem\Documents\GitHub\AmongUsMemory\YourCheese\bin\Debug\AmongUsMemory.dll
+C:\Users\Kylem\Documents\GitHub\AmongUsMemory\YourCheese\bin\Debug\Memory.dll
+C:\Users\Kylem\Documents\GitHub\AmongUsMemory\YourCheese\bin\Debug\AmongUsMemory.pdb
+C:\Users\Kylem\Documents\GitHub\AmongUsMemory\YourCheese\obj\Debug\YourCheese.csprojAssemblyReference.cache
+C:\Users\Kylem\Documents\GitHub\AmongUsMemory\YourCheese\obj\Debug\YourCheese.csproj.CopyComplete
+C:\Users\Kylem\Documents\GitHub\AmongUsMemory\YourCheese\obj\Debug\YourCheese.exe
+C:\Users\Kylem\Documents\GitHub\AmongUsMemory\YourCheese\obj\Debug\YourCheese.pdb

@@ -31,3 +31,9 @@ C:\Users\Kyle\Downloads\AmongUsMemory-master\AmongUsMemory-master\AmongUsMemory\
 C:\Users\Kyle\Downloads\AmongUsMemory-master\AmongUsMemory-master\AmongUsMemory\obj\Debug\AmongUsMemory.csproj.CopyComplete
 C:\Users\Kyle\Downloads\AmongUsMemory-master\AmongUsMemory-master\AmongUsMemory\obj\Debug\AmongUsMemory.dll
 C:\Users\Kyle\Downloads\AmongUsMemory-master\AmongUsMemory-master\AmongUsMemory\obj\Debug\AmongUsMemory.pdb
+C:\Users\Kylem\Documents\GitHub\AmongUsMemory\AmongUsMemory\bin\Debug\AmongUsMemory.dll
+C:\Users\Kylem\Documents\GitHub\AmongUsMemory\AmongUsMemory\bin\Debug\AmongUsMemory.pdb
+C:\Users\Kylem\Documents\GitHub\AmongUsMemory\AmongUsMemory\obj\Debug\AmongUsMemory.csprojAssemblyReference.cache
+C:\Users\Kylem\Documents\GitHub\AmongUsMemory\AmongUsMemory\obj\Debug\AmongUsMemory.csproj.CopyComplete
+C:\Users\Kylem\Documents\GitHub\AmongUsMemory\AmongUsMemory\obj\Debug\AmongUsMemory.dll
+C:\Users\Kylem\Documents\GitHub\AmongUsMemory\AmongUsMemory\obj\Debug\AmongUsMemory.pdb

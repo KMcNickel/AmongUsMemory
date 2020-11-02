@@ -11,7 +11,7 @@ namespace YourCheese
 {
     class Program
     {
-        static int tableWidth = 100;
+        static int tableWidth = 75;
 
        
         static List<PlayerData> playerDatas = new List<PlayerData>();
@@ -37,38 +37,50 @@ namespace YourCheese
        
             while (true)
             { 
-                Console.Clear();
-                Console.WriteLine("Player Data");
-                PrintRow("Name", "Color", "OwnerId", "PlayerId", "isImposter", "isAlive", "isConnected");
-                PrintLine();
-
-                PlayerComparer comparer = new PlayerComparer();
-
-                playerDatas.Sort(comparer);
-
-                foreach (var data in playerDatas)
+                
+                if(playerDatas.Count > 0)
                 {
-                    if (data.IsLocalPlayer)
-                    {
-                        
-                        Console.ForegroundColor = ConsoleColor.Green;
-                        //set your player name text renderer color
-                        data.WriteMemory_SetNameTextColor(new Color(0,1,0,1)); 
-                    }
-                    if (data.PlayerInfo.Value.IsDead == 1 || data.PlayerInfo.Value.Disconnected == 1)
-                        Console.ForegroundColor = ConsoleColor.Red;
+                    Console.Clear();
+                    //Console.WriteLine("Player Data");
+                    PrintRow("Name", "Color", /*"OwnerId", "PlayerId", */"isImposter", "isAlive", "isConnected");
+                    PrintLine();
 
-                    var Name = HamsterCheese.AmongUsMemory.Utils.ReadString(data.PlayerInfo.Value.PlayerName);
-                   PrintRow($"{Name}", $"{Colors[data.PlayerInfo.Value.ColorId]}", $"{data.Instance.OwnerId}", $"{data.Instance.PlayerId}", data.PlayerInfo.Value.IsImpostor == 1 ? $"true" : $"false", data.PlayerInfo.Value.IsDead == 1 ? $"false" : $"true", data.PlayerInfo.Value.Disconnected == 1 ? $"false" : $"true");
-                    Console.ForegroundColor = ConsoleColor.White; 
-            
-                   PrintLine();
-                }  
-                System.Threading.Thread.Sleep(100);
+                    PlayerComparer comparer = new PlayerComparer();
+
+                    playerDatas.Sort(comparer);
+
+                    foreach (var data in playerDatas)
+                    {
+                        if (data.IsLocalPlayer)
+                        {
+
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            //set your player name text renderer color
+                            //data.WriteMemory_SetNameTextColor(new Color(0, 1, 0, 1));
+                        }
+                        if (data.PlayerInfo.Value.IsDead == 1 || data.PlayerInfo.Value.Disconnected == 1)
+                            Console.ForegroundColor = ConsoleColor.Red;
+                        if(data.PlayerInfo.Value.IsImpostor == 1)
+                        {
+                            //Console.ForegroundColor = ConsoleColor.Yellow;
+                            //Set the Imposter name text renderer color
+                            data.WriteMemory_SetNameTextColor(new Color(1, 0, 0, 1));
+                        }
+
+                        var Name = HamsterCheese.AmongUsMemory.Utils.ReadString(data.PlayerInfo.Value.PlayerName);
+                        PrintRow($"{Name}", $"{Colors[data.PlayerInfo.Value.ColorId]}", /*$"{data.Instance.OwnerId}", $"{data.Instance.PlayerId}", */data.PlayerInfo.Value.IsImpostor == 1 ? $"Imposter" : $"Crewmate", data.PlayerInfo.Value.IsDead == 1 ? $"Dead" : $"Alive", data.PlayerInfo.Value.Disconnected == 1 ? $"Disconnected" : $"Connected");
+                        Console.ForegroundColor = ConsoleColor.White;
+
+                        PrintLine();
+                    }
+                }
+                  
+                System.Threading.Thread.Sleep(1000);
             }
         }
         static void Main(string[] args)
         {
+            Console.SetWindowSize(80, 25);
             // Cheat Init
             if (HamsterCheese.AmongUsMemory.Cheese.Init())
             { 
@@ -88,7 +100,7 @@ namespace YourCheese
                     foreach (var player in playerDatas)
                     {
                         player.onDie += (pos, colorId) => {
-                            Console.WriteLine("OnPlayerDied! Color ID :" + colorId);
+                            //Console.WriteLine("OnPlayerDied! Color ID :" + colorId);
                         }; 
                         // player state check
                         player.StartObserveState();

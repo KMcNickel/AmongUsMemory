@@ -37,3 +37,9 @@ C:\Users\Kylem\Documents\GitHub\AmongUsMemory\AmongUsMemory\obj\Debug\AmongUsMem
 C:\Users\Kylem\Documents\GitHub\AmongUsMemory\AmongUsMemory\obj\Debug\AmongUsMemory.csproj.CopyComplete
 C:\Users\Kylem\Documents\GitHub\AmongUsMemory\AmongUsMemory\obj\Debug\AmongUsMemory.dll
 C:\Users\Kylem\Documents\GitHub\AmongUsMemory\AmongUsMemory\obj\Debug\AmongUsMemory.pdb
+C:\Users\Kyle\Documents\GitHub\AmongUsMemory\AmongUsMemory\bin\Debug\AmongUsMemory.dll
+C:\Users\Kyle\Documents\GitHub\AmongUsMemory\AmongUsMemory\bin\Debug\AmongUsMemory.pdb
+C:\Users\Kyle\Documents\GitHub\AmongUsMemory\AmongUsMemory\obj\Debug\AmongUsMemory.csprojAssemblyReference.cache
+C:\Users\Kyle\Documents\GitHub\AmongUsMemory\AmongUsMemory\obj\Debug\AmongUsMemory.csproj.CopyComplete
+C:\Users\Kyle\Documents\GitHub\AmongUsMemory\AmongUsMemory\obj\Debug\AmongUsMemory.dll
+C:\Users\Kyle\Documents\GitHub\AmongUsMemory\AmongUsMemory\obj\Debug\AmongUsMemory.pdb

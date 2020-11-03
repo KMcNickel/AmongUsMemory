@@ -223,7 +223,7 @@ namespace HamsterCheese.AmongUsMemory
                 int _offset_vec2_position = 60;
                 int _offset_vec2_sizeOf = 8;
                 var netTransform = ((int)Instance.NetTransform + _offset_vec2_position).ToString("X");
-                var vec2Data= Cheese.mem.ReadBytes($"{netTransform}",_offset_vec2_sizeOf); // 주소로부터 8바이트 읽는다   
+                var vec2Data= Cheese.mem.ReadBytes($"{netTransform}",_offset_vec2_sizeOf); // Read 8 bytes from address   
                 if (vec2Data != null && vec2Data.Length != 0)
                 {
                     var vec2 = Utils.FromBytes<Vector2>(vec2Data);

@@ -11,7 +11,7 @@ namespace YourCheese
 {
     class Program
     {
-        static int tableWidth = 75;
+        static int tableWidth = 100;
 
        
         static List<PlayerData> playerDatas = new List<PlayerData>();
@@ -42,7 +42,7 @@ namespace YourCheese
                 {
                     Console.Clear();
                     //Console.WriteLine("Player Data");
-                    PrintRow("Name", "Color", /*"OwnerId", "PlayerId", */"isImposter", "isAlive", "isConnected");
+                    PrintRow("Name", "Color", /*"OwnerId", "PlayerId", */"isImposter", "isAlive", "isConnected",  "Position");
                     PrintLine();
 
                     PlayerComparer comparer = new PlayerComparer();
@@ -68,7 +68,7 @@ namespace YourCheese
                             Console.ForegroundColor = ConsoleColor.Red;
 
                         var Name = HamsterCheese.AmongUsMemory.Utils.ReadString(data.PlayerInfo.Value.PlayerName);
-                        PrintRow($"{Name}", $"{Colors[data.PlayerInfo.Value.ColorId]}", /*$"{data.Instance.OwnerId}", $"{data.Instance.PlayerId}", */data.PlayerInfo.Value.IsImpostor == 1 ? $"Imposter" : $"Crewmate", data.PlayerInfo.Value.IsDead == 1 ? $"Dead" : $"Alive", data.PlayerInfo.Value.Disconnected == 1 ? $"Disconnected" : $"Connected");
+                        PrintRow($"{Name}", $"{Colors[data.PlayerInfo.Value.ColorId]}", /*$"{data.Instance.OwnerId}", $"{data.Instance.PlayerId}", */data.PlayerInfo.Value.IsImpostor == 1 ? $"Imposter" : $"Crewmate", data.PlayerInfo.Value.IsDead == 1 ? $"Dead" : $"Alive", data.PlayerInfo.Value.Disconnected == 1 ? $"Disconnected" : $"Connected", $"{data.Position.x.ToString("0.#")}, {data.Position.y.ToString("0.#")}");
                         
                         Console.ForegroundColor = ConsoleColor.White;
                         PrintLine();
@@ -80,7 +80,7 @@ namespace YourCheese
         }
         static void Main(string[] args)
         {
-            Console.SetWindowSize(80, 25);
+            Console.SetWindowSize(110, 25);
             // Cheat Init
             if (HamsterCheese.AmongUsMemory.Cheese.Init())
             { 
